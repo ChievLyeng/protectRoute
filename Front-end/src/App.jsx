@@ -24,17 +24,18 @@ function App() {
         <Routes>
           <Route path="/" element={<PrivateRoutes />}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/policy" element={<Policy />} />
             <Route path="/Admindashboard" element={<AdminDashboard />} />
             <Route path="/create-category" element={<CreateCategory />} />
             <Route path="/create-product" element={<CreateProduct />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="*" element={<Pagenotfound />} />
+            
           </Route>
+            <Route path="*" element={<Pagenotfound />} />
+            <Route path="/forgot-ßpassword" element={<ForgotPassword />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/policy" element={<Policy />} />
+            <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
